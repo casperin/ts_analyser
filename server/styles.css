@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: #f6f6ef;
+    font-size: 13px; /* We need to show a lot of data */
+    font-family: sans-serif;
+}
+
+.warnings-bar, .warnings {
+    background: #fea;
+    border-bottom: 1px solid #db8;
+}
+.warnings {
+    padding: 10px;
+}
+
+.panel {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.panel__left, .panel__right {
+    position: relative;
+    overflow: auto;
+}
+
+.panel__left {
+    flex: 7;
+}
+
+.panel__right {
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.raw__textarea {
+    flex: 1;
+    padding: 5px;
+    margin: 0;
+    border: 0;
+}
+
+.grouped-files {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grouped-files__group {
+    border: 1px dashed #ddd;
+    font-size: 11px;
+    background: white;
+    padding: 5px;
+    margin: 5px;
+}
+.grouped-files__name {
+    margin: 0;
+    font-weight: bold;
+}
+.grouped-files__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.grouped-files__filename {
+    font-family: monospace;
+}
+
+.graph {
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    min-height: calc(100% - 20px);
+    padding: 0;
+    margin: 0;
+}
+
+.graph__connection--good {
+    stroke: green;
+    fill: none;
+}
+
+.graph__connection--bad {
+    stroke: red;
+    fill: none;
+}
+
+.graph__group-bg {
+    fill: white;
+    stroke: #ccc;
+}
+
+.graph__group-name {
+    font-weight: bold;
+}
+
+
+.diagram {
+    margin-top: 10px;
+    display: flex;
+}
+
+.diagram__svg {
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 0 10px;
+    width: 600px;
+    height: 400px;
+    background: white;
+}
+
+.diagram__dot {
+    fill: rgba(0, 100, 0, .3);
+    transition: .2s;
+}
+
+.diagram__file {
+    display: none;
+}
+
+.diagram__g:hover .diagram__file {
+    display: block;
+}
+

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2015",
+    "module": "CommonJS",
+    // "outFile": "./dist/analyse.js",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./tsinfo",
+    "strict": true,
+    "noUnusedLocals": true,
+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+
+    "forceConsistentCasingInFileNames": true
+  }
+}
